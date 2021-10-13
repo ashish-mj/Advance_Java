@@ -2,9 +2,13 @@ package com.rakuten.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.rakuten.dal.ProductDAO;
 import com.rakuten.domain.Product;
 
+@Service
 public class ProductServiceImpl implements ProductService {
 	
 	ProductDAO dao ;
@@ -15,6 +19,7 @@ public class ProductServiceImpl implements ProductService {
 		return dao;
 	}
 
+	@Autowired
 	public void setDao(ProductDAO dao) {
 		this.dao = dao;
 	}

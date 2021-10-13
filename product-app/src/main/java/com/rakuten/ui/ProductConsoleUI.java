@@ -2,12 +2,15 @@ package com.rakuten.ui;
 
 import java.util.Scanner;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.rakuten.domain.Product;
 import com.rakuten.service.ProductService;
 import com.rakuten.service.ProductServiceImpl;
 
 
-
+@Component
 public class ProductConsoleUI {
 	
 	ProductService service;
@@ -17,7 +20,7 @@ public class ProductConsoleUI {
 		return service;
 	}
 
-
+    @Autowired
 	public void setService(ProductService service) {
 		this.service = service;
 	}
