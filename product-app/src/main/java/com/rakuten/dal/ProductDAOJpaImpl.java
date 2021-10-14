@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,6 +14,7 @@ import com.rakuten.domain.Product;
 
 @Transactional
 @Repository
+@Primary
 public class ProductDAOJpaImpl implements ProductDAO{
 
 	@Autowired
