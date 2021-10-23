@@ -25,7 +25,6 @@ public class Product {
 	}
 
 	public Product(String name, float price, int qoh) {
-		super();
 		this.name = name;
 		this.price = price;
 		this.qoh = qoh;

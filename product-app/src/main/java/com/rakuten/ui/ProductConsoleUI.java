@@ -1,5 +1,6 @@
 package com.rakuten.ui;
 
+/*
 import java.util.Scanner;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,3 +47,4 @@ public class ProductConsoleUI {
 	}
 
 }
+*/

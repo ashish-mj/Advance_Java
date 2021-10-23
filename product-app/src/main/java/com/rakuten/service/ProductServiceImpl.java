@@ -11,6 +11,7 @@ import com.rakuten.domain.Product;
 @Service
 public class ProductServiceImpl implements ProductService {
 	
+	@Autowired
 	ProductDAO dao ;
 	
 	

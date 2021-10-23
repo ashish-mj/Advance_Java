@@ -20,24 +20,20 @@ public class ProductDAOJpaImpl implements ProductDAO{
 	@Autowired
 	EntityManager em;
 	
-	@Override
 	public Product save(Product toBeSaved) {
 		em.persist(toBeSaved);
 		return toBeSaved;
 	}
 
-	@Override
 	public Product findById(int id) {
 		return em.find(Product.class, id);
 	}
 
-	@Override
 	public List<Product> findAll() {
 		Query q = em.createQuery("seLecT p from Product as p");
 		return q.getResultList();
 	}
 
-	@Override
 	public void deleteById(int id) {
 		Product p = em.find(Product.class, id);
 		em.remove(p);
