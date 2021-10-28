@@ -1,6 +1,6 @@
 package com.rakuten.dal;
 
-/*
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -45,4 +45,3 @@ public class ProductDAOInMemImpl implements ProductDAO {
 	
 }
 
-*/
